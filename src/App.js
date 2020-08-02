@@ -22,7 +22,7 @@ export const Routes = () => (
 const App = () => (
     <div>
         <Router>
-            <Navbar />
+            {window.location.pathname === "/account-login" ? "" : <Navbar />}
             <Routes />
         </Router>
     </div>
